@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#540b2a">
+  <title>Surprise ya Deborah ✨</title>
+  <meta name="description" content="Ujumbe maalum wa birthday kwa Deborah.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23540b2a'/%3E%3Cpath d='M32 51S12 39 12 24c0-10 13-15 20-5 7-10 20-5 20 5 0 15-20 27-20 27Z' fill='%23ffcc70'/%3E%3C/svg%3E">
+  <style>
+    :root{--wine:#540b2a;--ruby:#9c174c;--rose:#ff5c91;--gold:#ffcf79;--cream:#fff8ee;--ink:#431227}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;font-family:Georgia,'Times New Roman',serif;background:#2c0719;color:var(--cream)}
+    body{min-height:100svh;overflow-x:hidden;background:radial-gradient(circle at 50% 15%,#a51c54 0,#5b0c2d 40%,#290615 100%)}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.3;background-image:radial-gradient(circle,#ffd985 1px,transparent 1.5px);background-size:38px 38px;animation:drift 18s linear infinite}
+    .glow{position:fixed;width:44rem;height:44rem;border-radius:50%;filter:blur(90px);opacity:.2;background:#ff659a;top:-20rem;left:50%;transform:translateX(-50%);pointer-events:none}
+    main{min-height:100svh;display:grid;place-items:center;padding:24px;position:relative;z-index:1}
+    .card{width:min(92vw,650px);min-height:min(720px,88svh);display:flex;align-items:center;justify-content:center;text-align:center;padding:clamp(28px,7vw,64px);border:1px solid rgba(255,225,174,.35);border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.04));box-shadow:0 30px 90px rgba(0,0,0,.36),inset 0 1px rgba(255,255,255,.3);backdrop-filter:blur(18px);position:relative;overflow:hidden}
+    .card::before,.card::after{content:"✦";position:absolute;color:var(--gold);font-size:2rem;opacity:.75}.card::before{top:24px;left:28px}.card::after{right:28px;bottom:24px}
+    .screen{display:none;width:100%;animation:rise .8s cubic-bezier(.2,.8,.2,1)}.screen.active{display:block}
+    .eyebrow{font:700 .82rem/1.2 system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 20px}
+    h1,h2{margin:0;line-height:.96;font-weight:500;text-wrap:balance}h1{font-size:clamp(3.4rem,12vw,6.8rem)}h2{font-size:clamp(2.6rem,9vw,5rem)}
+    .script{font-style:italic;color:var(--gold);text-shadow:0 0 35px rgba(255,207,121,.28)}
+    p{font-size:clamp(1.08rem,3.8vw,1.35rem);line-height:1.65;margin:24px auto;color:#fff4e8;max-width:32rem;text-wrap:pretty}
+    .gift{font-size:clamp(4.5rem,18vw,8rem);display:block;margin:4px 0 16px;filter:drop-shadow(0 10px 24px rgba(0,0,0,.3));animation:float 2.6s ease-in-out infinite}
+    button{appearance:none;border:0;border-radius:999px;background:linear-gradient(135deg,#ffd985,#f4a84f);color:#4a0b27;font:800 1rem/1 system-ui,sans-serif;padding:18px 30px;box-shadow:0 12px 30px rgba(255,184,79,.28);cursor:pointer;transition:transform .2s,box-shadow .2s}button:hover{transform:translateY(-2px);box-shadow:0 15px 36px rgba(255,184,79,.38)}button:active{transform:translateY(1px)}button:focus-visible{outline:3px solid white;outline-offset:4px}
+    .note{border-top:1px solid rgba(255,216,145,.28);border-bottom:1px solid rgba(255,216,145,.28);padding:18px 0;margin:26px 0;font-style:italic}
+    .signature{color:var(--gold);font-size:1rem;margin-top:28px;letter-spacing:.06em}
+    .dots{display:flex;justify-content:center;gap:8px;margin-top:28px}.dots span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.25)}.dots span.on{background:var(--gold);box-shadow:0 0 12px var(--gold)}
+    .confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}.piece{position:absolute;top:-24px;width:10px;height:16px;border-radius:3px;animation:fall var(--d) linear forwards;transform:rotate(var(--r));left:var(--x);background:var(--c)}
+    .tiny{font:500 .86rem/1.5 system-ui,sans-serif;opacity:.72;margin-top:18px}
+    @keyframes rise{from{opacity:0;transform:translateY(20px) scale(.98)}to{opacity:1;transform:none}}
+    @keyframes float{50%{transform:translateY(-10px) rotate(2deg)}}
+    @keyframes drift{to{background-position:38px 76px}}
+    @keyframes fall{to{transform:translateY(110svh) rotate(720deg);opacity:.85}}
+    @media (max-width:520px){main{padding:14px}.card{min-height:calc(100svh - 28px);border-radius:28px;padding:30px 24px}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <div class="glow"></div><div class="confetti" id="confetti" aria-hidden="true"></div>
+  <main>
+    <section class="card" aria-live="polite">
+      <div class="screen active" data-screen="0">
+        <p class="eyebrow">Kuna kitu maalum kwa ajili yako</p>
+        <span class="gift" aria-hidden="true">🎁</span>
+        <h1>Hey, <span class="script">Deborah</span></h1>
+        <p>Leo si siku ya kawaida. Kuna ujumbe mdogo unaosubiri mtu wa kipekee sana.</p>
+        <button type="button" data-next>Fungua surprise ✨</button>
+        <p class="tiny">Bonyeza hapo juu</p>
+        <div class="dots"><span class="on"></span><span></span><span></span></div>
+      </div>
+      <div class="screen" data-screen="1">
+        <p class="eyebrow">Kwa msichana mwenye mwanga wake</p>
+        <h2>Happy Birthday,<br><span class="script">beautiful soul.</span></h2>
+        <p class="note">Natumaini leo itakukumbusha jinsi ulivyo wa thamani, jinsi tabasamu lako linavyoweza kubadilisha mood ya mtu, na jinsi uwepo wako unavyofanya dunia iwe nzuri zaidi.</p>
+        <button type="button" data-next>Kuna ujumbe mwingine ❤️</button>
+        <div class="dots"><span></span><span class="on"></span><span></span></div>
+      </div>
+      <div class="screen" data-screen="2">
+        <p class="eyebrow">Birthday wish yangu kwako</p>
+        <h2>Uendelee <span class="script">kung'aa.</span></h2>
+        <p>Katika mwaka wako mpya, nakutakia amani moyoni, watu wa kweli karibu yako, ndoto zinazotimia, na sababu nyingi za kutabasamu. Usibadilike kuwa mtu mwingine—endelea kuwa Deborah yule wa kipekee.</p>
+        <p class="signature">HAPPY BIRTHDAY, DEBORAH ♥</p>
+        <button type="button" id="celebrate">Sherehekea! 🎉</button>
+        <div class="dots"><span></span><span></span><span class="on"></span></div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const screens=[...document.querySelectorAll('.screen')];let current=0;
+    document.querySelectorAll('[data-next]').forEach(btn=>btn.addEventListener('click',()=>{screens[current].classList.remove('active');current++;screens[current].classList.add('active')}));
+    function celebrate(){const box=document.getElementById('confetti'),colors=['#ffcf79','#ff5c91','#fff8ee','#e62f6b','#ffffff'];box.innerHTML='';for(let i=0;i<90;i++){const p=document.createElement('i');p.className='piece';p.style.setProperty('--x',Math.random()*100+'vw');p.style.setProperty('--d',(2.8+Math.random()*3)+'s');p.style.setProperty('--r',Math.random()*180+'deg');p.style.setProperty('--c',colors[i%colors.length]);p.style.animationDelay=Math.random()*.8+'s';box.appendChild(p)}setTimeout(()=>box.innerHTML='',7000)}
+    document.getElementById('celebrate').addEventListener('click',celebrate);
+  </script>
+</body>
+</html>
+
